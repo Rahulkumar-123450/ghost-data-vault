@@ -184,7 +184,7 @@ const TerminalMode: React.FC = () => {
         </div>
         
         {/* Terminal Content */}
-        <div className="bg-cyber-black p-4 min-h-[300px] max-h-[60vh] overflow-auto font-spacemono text-white text-sm flex flex-col">
+        <div className="bg-cyber-black p-4 min-h-[300px] max-h-[60vh] overflow-auto font-spacemono text-sm flex flex-col">
           {/* Terminal Output */}
           <div className="flex-1">
             {output.map((line, index) => (
@@ -196,7 +196,7 @@ const TerminalMode: React.FC = () => {
           
           {/* Terminal Input */}
           <form onSubmit={handleSubmit} className="flex items-center mt-2">
-            <span className="text-cyber-cyan mr-2">></span>
+            <span className="text-cyber-cyan mr-2">{'>'}</span>
             <input 
               type="text"
               ref={inputRef}
